@@ -42,10 +42,6 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        // Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        // move personagem em uma posição
-        // transform.position += movement * Time.deltaTime * Speed;
-
         float movement = Input.GetAxis("Horizontal");
         rig.velocity = new Vector2(movement * Speed, rig.velocity.y);
 
